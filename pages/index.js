@@ -78,7 +78,7 @@ const Page = () => {
             <div className="separate">
               <div className="enviorment goal">
                 <FaLeaf size={35} className="icon" />
-                <h4>Enviorment</h4>
+                <h4>Environment</h4>
                 <p className="goal-text">
                   The world is facing massive challenges tied to climate change.
                   Transportation is a big contributer to CO2 emissions. With
@@ -102,7 +102,7 @@ const Page = () => {
               </div>
               <div className="competition goal">
                 <GiTrophy size={35} className="icon" />
-                <h4>Competiton</h4>
+                <h4>Competition</h4>
                 <p className="goal-text">
                   Every year starting from 2015 SpaceX has held a hyperloop
                   competition in California. Shift is planning on competing this
