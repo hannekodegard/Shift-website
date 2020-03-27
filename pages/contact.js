@@ -1,7 +1,8 @@
 import withLayout from '../components/Layout';
 import Layout from '../components/Layout';
 import { useRef } from 'react';
-import { FaFacebook, FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaLinkedin, FaEn } from 'react-icons/fa';
+import { FiMail } from 'react-icons/fi';
 
 <script
   type="text/javascript"
@@ -65,8 +66,13 @@ export default function About() {
             <a href="https://www.linkedin.com/company/shift-hyperloop/">
               <FaLinkedin />
             </a>
-            <a href="https://github.com/shifthyperloop">
-              <FaGithub />
+            <a
+              href={''}
+              onMouseOver={e =>
+                (e.target.href = 'mailto: contact@shifthyperloop.com')
+              }
+            >
+              <FiMail />
             </a>
           </p>
         </div>

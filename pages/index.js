@@ -208,7 +208,6 @@ const Page = () => {
             max-width: 1200px;
             margin: auto;
             justify-content: center;
-            margin-top: ;
           }
           iframe {
             width: 50%;
@@ -230,8 +229,9 @@ const Page = () => {
             flex-direction: column;
           }
           .goal {
-            max-width: 350px;
+            max-width: 300px;
             width: 100%;
+            margin-top: 20px;
             margin-left: 20px;
             margin-right: 20px;
           }
