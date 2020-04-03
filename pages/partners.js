@@ -145,6 +145,16 @@ const Page = ({ sponsors }) => {
               <Sponsor key={sponsor.title} {...sponsor} />
             ))}
         </div>
+        <h2 className="contributor sponsors">
+          <span>OTHER CONTRIBUTORS</span>
+        </h2>
+        <div className="sponsor-list">
+          {sponsors
+            .filter(sponsor => sponsor.type === 'Contributor')
+            .map(sponsor => (
+              <Sponsor key={sponsor.title} {...sponsor} />
+            ))}
+        </div>
       </section>
 
       <style jsx>{`
@@ -245,6 +255,12 @@ const Page = ({ sponsors }) => {
         .sponsors.bronze {
           color: #b08d57;
           font-size: 3.2rem;
+        }
+
+        .sponsors.contributor {
+          color: #fff;
+          font-size: 2rem;
+          margin-top: 50px;
         }
 
         .sponsors {
