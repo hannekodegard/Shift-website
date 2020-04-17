@@ -94,7 +94,7 @@ const Footer = () => (
         width: 50%;
       }
       .alvatag {
-        width: 100%;
+        width: 80%;
       }
       .main-sponsor,
       .flex-column {
