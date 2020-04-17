@@ -110,8 +110,8 @@ const Page = ({ sponsors }) => {
         </h2>
         <div className="sponsor-list">
           {sponsors
-            .filter(sponsor => sponsor.type === 'Platinum')
-            .map(sponsor => (
+            .filter((sponsor) => sponsor.type === 'Platinum')
+            .map((sponsor) => (
               <Sponsor key={sponsor.title} {...sponsor} />
             ))}
         </div>
@@ -120,8 +120,8 @@ const Page = ({ sponsors }) => {
         </h2>
         <div className="sponsor-list">
           {sponsors
-            .filter(sponsor => sponsor.type === 'Gold')
-            .map(sponsor => (
+            .filter((sponsor) => sponsor.type === 'Gold')
+            .map((sponsor) => (
               <Sponsor key={sponsor.title} {...sponsor} />
             ))}
         </div>
@@ -130,8 +130,8 @@ const Page = ({ sponsors }) => {
         </h2>
         <div className="sponsor-list">
           {sponsors
-            .filter(sponsor => sponsor.type === 'Silver')
-            .map(sponsor => (
+            .filter((sponsor) => sponsor.type === 'Silver')
+            .map((sponsor) => (
               <Sponsor key={sponsor.title} {...sponsor} />
             ))}
         </div>
@@ -140,18 +140,18 @@ const Page = ({ sponsors }) => {
         </h2>
         <div className="sponsor-list">
           {sponsors
-            .filter(sponsor => sponsor.type === 'Bronze')
-            .map(sponsor => (
+            .filter((sponsor) => sponsor.type === 'Bronze')
+            .map((sponsor) => (
               <Sponsor key={sponsor.title} {...sponsor} />
             ))}
         </div>
         <h2 className="contributor sponsors">
-          <span>OTHER CONTRIBUTORS</span>
+          <span>OTHER now CONTRIBUTORS</span>
         </h2>
         <div className="sponsor-list">
           {sponsors
-            .filter(sponsor => sponsor.type === 'Contributor')
-            .map(sponsor => (
+            .filter((sponsor) => sponsor.type === 'Contributor')
+            .map((sponsor) => (
               <Sponsor key={sponsor.title} {...sponsor} />
             ))}
         </div>
@@ -316,12 +316,12 @@ const Page = ({ sponsors }) => {
   );
 };
 
-Page.getInitialProps = async function() {
+Page.getInitialProps = async function () {
   const res = await fetch(CMS_BASE_URL + '/sponsors');
   const data = await res.json();
 
   return {
-    sponsors: data.map(sponsor => {
+    sponsors: data.map((sponsor) => {
       return {
         title: sponsor.Title,
         logo: sponsor.Logo,
