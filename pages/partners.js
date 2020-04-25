@@ -146,7 +146,7 @@ const Page = ({ sponsors }) => {
             ))}
         </div>
         <h2 className="contributor sponsors">
-          <span>OTHER now CONTRIBUTORS</span>
+          <span>OTHER CONTRIBUTORS</span>
         </h2>
         <div className="sponsor-list">
           {sponsors
